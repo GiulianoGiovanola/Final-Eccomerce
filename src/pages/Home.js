@@ -1,4 +1,4 @@
-import React, {useContext} from 'react'
+import React /*, {useContext}*/ from 'react'
 import Cafe from '../img/cafe.png'
 import { Container } from '../Components/Home/styled'
 import Button from '../Components/Button/Button';

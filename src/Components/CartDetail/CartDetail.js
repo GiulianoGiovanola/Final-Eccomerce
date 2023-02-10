@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { Container } from "./styled";
 
 const CartDetail = ({ cart, getCartTotal, resetCart, removeItem, editQuantity, cartTotalItems }) => {
