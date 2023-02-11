@@ -2,21 +2,21 @@ import styled from 'styled-components';
 
 const Container = styled.div`
 
-    height: 30px;
-    padding: 20px;
-    background-color: #333030;
-    box-shadow: 1px 1px 5px #333030;
+    height: 80px;
+    background-color: transparent;
+    //box-shadow: 1px 1px 5px #333030;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    top: 0;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-
     .logo{
         width: 4%;
-        padding-left: 1em;
+        padding-left: 2em;
     }
 
     nav {
