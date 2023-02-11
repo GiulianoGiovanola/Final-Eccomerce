@@ -10,8 +10,7 @@ const Informacion = () => {
       <h2>Step into the light</h2>
       <div>
         <p>with our special coffe flavours</p>
-        {/*<a href='#'>Learn More</a>*/}
-        <Button>Learn More</Button>
+        <a href='#'>Learn More</a>
       </div>
       <img src={Mesa} alt="imgCafe" />
     </Container>

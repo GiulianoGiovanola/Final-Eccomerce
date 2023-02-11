@@ -34,7 +34,7 @@ div{
         font-size: 18px;
         font-weight: 500;
     }
-    /*a{
+    a{
         color: #fff;
         text-decoration: none;
         background-color: #fa2b57;
@@ -44,7 +44,7 @@ div{
         box-shadow: 0px 10px 20px -5px #333030;
         border: none;
         cursor: pointer;
-    }*/
+    }
 }
 `
 
