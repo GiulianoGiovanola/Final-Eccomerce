@@ -3,5 +3,6 @@ body {
   font-family: 'Montserrat', 'Poppins', 'sans-serif';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #9abec1;
+  background-color: #a1cac8;
+  color: #333030;
 }

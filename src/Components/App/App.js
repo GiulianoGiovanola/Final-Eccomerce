@@ -6,6 +6,7 @@ import Product from "../../pages/Product";
 import Checkout from "../../pages/Checkout";
 import Navbar from "../Navbar/Navbar";
 import { CartProvider } from "../../Contexts/CartContext";
+import About from "../About/About";
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
             </Route>
             <Route exact path={`/`}>
               <Home />
+            </Route>
+            <Route exact path={`/about`}>
+              <About />
             </Route>
             <Route path="*">NOT FOUND</Route>
           </Switch>

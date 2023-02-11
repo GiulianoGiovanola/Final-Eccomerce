@@ -39,9 +39,6 @@ const Navbar = () => {
                 <li>
                     <Link to={`/`}>Home</Link>
                 </li>
-                <li>
-                    <Link to={`/shop`}>Shop</Link>
-                </li>
                 {!loading &&
                     categories.map(({ catId, name }) => (
                     <li>
@@ -49,6 +46,9 @@ const Navbar = () => {
                     </li>
                     )
                 )}
+                <li>
+                    <Link to={`/about`}>About</Link>
+                </li>
                 <li>
                     <Link to={`/checkout`}><img className="imgSociales" src={Cart} alt="imgSociales" /></Link>
                 </li>
