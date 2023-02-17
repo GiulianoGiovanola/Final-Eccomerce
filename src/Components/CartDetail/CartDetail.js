@@ -2,6 +2,7 @@ import React from 'react';
 import { Container } from "./styled";
 
 const CartDetail = ({ cart, getCartTotal, resetCart, removeItem, editQuantity, cartTotalItems }) => {
+
   return (
     <Container>
       {cart.map(({ id, name, price, quantity }) => (
@@ -38,13 +39,13 @@ const CartDetail = ({ cart, getCartTotal, resetCart, removeItem, editQuantity, c
       
       {cartTotalItems() > 0 ? (
         <div className="final">
-          <h3>Total: {getCartTotal()} €</h3>
+          <h3 className='total'>Total: {getCartTotal()} €</h3>
           <button className="btnempty" onClick={() => resetCart()}>
             Empty cart
           </button>
         </div>
       ) : (
-        <div className="final">
+        <div className="final2">
           <p className="preciototal">The cart is empty. Add some products!</p>
         </div>
       )}
