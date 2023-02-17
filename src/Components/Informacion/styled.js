@@ -6,7 +6,6 @@ color: #333030;
 position: relative;
 background-color: white;
 padding: 10em 0;
-background-color: white;
 
 img{
     width: 40%;
@@ -31,16 +30,19 @@ div{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
         h3{
             font-size: 28px;
             font-weight: 500;
             margin-bottom: 2em;
             color: #9abec1;
         }
+
         h4{
             font-size: 18px;
             font-weight: 500;
         }
+
         a{
             color: #fff;
             text-decoration: none;
@@ -52,6 +54,7 @@ div{
             border: none;
             cursor: pointer;
         }
+        
         p{
             font: 500 18px 'EB Garamond', serif;
             width: 80%;

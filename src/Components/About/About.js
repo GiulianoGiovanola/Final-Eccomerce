@@ -1,20 +1,18 @@
 import React from 'react'
-import { Container } from './styled';
 import NavbarStatic from '../NavbarStatic/NavbarStatic'
+import HeaderAbout from '../HeaderAbout/HeaderAbout'
+import Empresa from '../Empresa/Empresa'
+import Footer from '../Footer/Footer'
+
 
 const About = () => {
   return (
-    <div>
+    <>
       <NavbarStatic />
-      <Container>
-        <div>
-          <h1>HOLA</h1>
-          <p>
-            COMO ESTAS
-          </p>
-        </div>
-      </Container>
-    </div>
+      <HeaderAbout />
+      <Empresa />
+      <Footer />
+    </>
   )
 }
 
