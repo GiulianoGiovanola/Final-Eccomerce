@@ -14,6 +14,9 @@ Botón reutilizable en diferentes componentes.
 ###  Carrito
 Carrito de compras con resumen de productos agregados y cantidades.
 
+### Opciones de Carrito - *NUEVO*
+Funciones para agregar, quitar individualmente y grupalmente los productos del carrito de compras
+
 ###  CartContainer
 Contenedor del carrito.
 
@@ -60,8 +63,11 @@ Funciones reutilizables para obtener las categorías desde Firebase, utilizadas 
 ### base de  fuego / índice
 Configuración de firebase desde .env
 
+## Design
+
+### Mejoras de Diseño - *Nuevo*
+Mejoras de la interfaces junto a la implementación de imagenes de alta calidad y pantallas nuevas 
+
 ## Future improvments (Course out of scope)
 
-- Agregar las opciones de agregar, quitar y eliminar producto 
-- Agregar separado de productos, cantidad y precio
-- Mejoras de diseño
+- Agregar buscador para encontrar el producto que se requiera
