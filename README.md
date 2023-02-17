@@ -1,7 +1,7 @@
 #  Eccomerce de Cafe Station
 
 ## Deployed on Vercel
-https://prog3-ecommerce-2021.vercel.app/
+https://final-eccomerce.vercel.app/
 
 ## Components
 
