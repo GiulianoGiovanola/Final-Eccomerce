@@ -4,10 +4,19 @@ import CheckoutForm from "../Components/CheckoutForm/CheckoutForm";
 import { CartContext } from "../Contexts/CartContext";
 import CartDetail from "../Components/CartDetail/CartDetail";
 import { getFirestore, getDate } from "../services/firebase";
-import { Container} from '../Components/pageCheckout/styled';
+import { Container } from "../Components/pageCheckout/styled";
+import NavbarStatic from "../Components/NavbarStatic/NavbarStatic";
 
 const Checkout = () => {
-  const { cart, getCartTotal, setCart, resetCart, removeItem, addToCart, cartTotalItems } = useContext(CartContext);
+  const {
+    cart,
+    getCartTotal,
+    setCart,
+    resetCart,
+    removeItem,
+    addToCart,
+    cartTotalItems,
+  } = useContext(CartContext);
   const [orderCreated, setOrderCreated] = useState(false);
 
   console.log(cart);
@@ -28,7 +37,7 @@ const Checkout = () => {
         return { id, name, price, quantity };
       });
 
-      console.log(cartItems)
+      console.log(cartItems);
 
       const order = {
         buyer: buyerData,
@@ -45,37 +54,40 @@ const Checkout = () => {
     }
   };
   return (
-    <Container>
-      <Grid>
-        <Col desktop={12} tablet={6} mobile={12}>
-        {orderCreated ? (
-          <h2>Checkout {`Order N° ${orderCreated}`}</h2>
-        ) : (
-          <h2>Checkout</h2>
-        )}
-        </Col>
-        {cartTotalItems() > 0 ? (
+    <>
+      <NavbarStatic />
+      <Container>
+        <Grid>
           <Col desktop={12} tablet={6} mobile={12}>
-            <CheckoutForm 
-              handleSubmit={placeOrder} 
-              cartTotalItems={cartTotalItems}
-              />
+            {orderCreated ? (
+              <h2>Checkout {`Order N° ${orderCreated}`}</h2>
+            ) : (
+              <h2>Checkout</h2>
+            )}
           </Col>
-        ) : (
-        <></>
-        )}
-        <Col desktop={12} tablet={6} mobile={12}>
-          <CartDetail 
-            cart={cart} 
-            getCartTotal={getCartTotal} 
-            resetCart= {resetCart}
-            removeItem= {removeItem}
-            editQuantity= {addToCart}
-            cartTotalItems= {cartTotalItems}
+          {cartTotalItems() > 0 ? (
+            <Col desktop={12} tablet={6} mobile={12}>
+              <CheckoutForm
+                handleSubmit={placeOrder}
+                cartTotalItems={cartTotalItems}
+              />
+            </Col>
+          ) : (
+            <></>
+          )}
+          <Col desktop={12} tablet={6} mobile={12}>
+            <CartDetail
+              cart={cart}
+              getCartTotal={getCartTotal}
+              resetCart={resetCart}
+              removeItem={removeItem}
+              editQuantity={addToCart}
+              cartTotalItems={cartTotalItems}
             />
-        </Col>
-      </Grid>
-    </Container>
+          </Col>
+        </Grid>
+      </Container>
+    </>
   );
 };
 

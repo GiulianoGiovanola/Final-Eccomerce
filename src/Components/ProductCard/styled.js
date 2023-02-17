@@ -7,10 +7,12 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 
-border-radius: 10px;
+border-radius: 8px;
 background-color: #fff;
 color: #000;
 padding: 1em 0 0;
+
+box-shadow: 0px 1px 2px rgb(0 0 0 / 10%), 0px 2px 4px rgb(0 0 0 / 10%), 0px 4px 8px rgb(0 0 0 / 10%), 0px 8px 16px rgb(0 0 0 / 10%);
 
 img{
     width: 60%;
@@ -37,8 +39,8 @@ p{
 .buttonView{
     text-decoration: none;
     background-color: #fa2b57;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     width: 100%;
     height: 7vh;
     color: #fff;

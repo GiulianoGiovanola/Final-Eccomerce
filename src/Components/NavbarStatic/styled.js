@@ -3,12 +3,11 @@ import styled from 'styled-components';
 const Container = styled.div`
 
     height: 80px;
-    background-color: transparent;
-    position: absolute;
-    z-index: 2;
+    background-color: #303030;
+    box-shadow: 1px 1px 5px #303030;
     width: 100%;
+    position: fixed;
     top: 0;
-
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -4,7 +4,6 @@ import Home from "../../pages/Home";
 import Category from "../../pages/Category";
 import Product from "../../pages/Product";
 import Checkout from "../../pages/Checkout";
-import Navbar from "../Navbar/Navbar";
 import { CartProvider } from "../../Contexts/CartContext";
 import About from "../About/About";
 
@@ -13,7 +12,6 @@ function App() {
     <div className="App">
       <Router>
         <CartProvider>
-          <Navbar />
           <Switch>
             <Route exact path={`/shop`}>
               <Category />

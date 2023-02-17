@@ -8,6 +8,7 @@ const Container = styled.div`
   }
   p{
     color: #333030;
+    text-align: center;
   }
 `;
 

@@ -3,9 +3,10 @@ import { useParams } from "react-router-dom";
 import { default as ProductComp } from "../Components/Product/Product";
 import { CartContext } from "../Contexts/CartContext";
 import { getFirestore } from "../services/firebase";
-import { Container } from '../Components/pageProduct/styled'
-import Cafe from '../img/coffee.gif'
-import Exclamation from '../img/exclamation.svg'
+import { Container } from "../Components/pageProduct/styled";
+import Cafe from "../img/coffee.gif";
+import Exclamation from "../img/exclamation.svg";
+import NavbarStatic from "../Components/NavbarStatic/NavbarStatic";
 
 const Product = () => {
   const { prodId } = useParams();
@@ -23,9 +24,8 @@ const Product = () => {
     addToCart(product);
     setShowNotification(product.name);
     setTimeout(() => {
-        setShowNotification(false);
+      setShowNotification(false);
     }, 5000);
-    
   };
 
   useEffect(() => {
@@ -54,18 +54,30 @@ const Product = () => {
   //Aca vamos a consultarle a firebase los datos de este producto usando el prodId
 
   return (
-    <Container>
-      {showNotification && <p className="productoAgregado"><img className="exclamation" src={Exclamation} alt="imgExclamation" />{`Product added to cart: ${showNotification}`}</p>}
-      {loading ? (
-        <img className="gif" src={Cafe} alt="imgGif" />
-      ) : (
-        <ProductComp
-          prodId={prodId}
-          product={product}
-          addToCart={addToCartWithFeedback}
-        />
-      )}
-    </Container>
+    <>
+      <NavbarStatic />
+      <Container>
+        {showNotification && (
+          <p className="productoAgregado">
+            <img
+              className="exclamation"
+              src={Exclamation}
+              alt="imgExclamation"
+            />
+            {`Product added to cart: ${showNotification}`}
+          </p>
+        )}
+        {loading ? (
+          <img className="gif" src={Cafe} alt="imgGif" />
+        ) : (
+          <ProductComp
+            prodId={prodId}
+            product={product}
+            addToCart={addToCartWithFeedback}
+          />
+        )}
+      </Container>
+    </>
   );
 };
 
