@@ -20,6 +20,11 @@ button {
     align-items: center;
     justify-content: space-between;
 
+    .productname{
+      width: 20%;
+      text-align: start;
+    }
+
     .addOrDelete {
       width: 15%;
       text-align: center;
@@ -52,6 +57,10 @@ button {
   p {
     color: #333030;
     text-align: center;
+  }
+
+  .precio{
+    text-align: end;
   }
 
   .final{

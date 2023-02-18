@@ -8,7 +8,7 @@ const CartDetail = ({ cart, getCartTotal, resetCart, removeItem, editQuantity, c
       {cart.map(({ id, name, price, quantity }) => (
         <ul>
             <li>
-              <p>{name}</p>
+              <p className='productname'>{name}</p>
               <div className="addOrDelete">
                 <button
                   className="btn"
