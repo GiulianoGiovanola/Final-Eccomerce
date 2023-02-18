@@ -16,7 +16,7 @@ const CategoryContainer = ({ catId }) => {
                 const db = getFirestore()
                 const productsCollection = db.collection(`products`)
                 const productsSnapshot = catId ?
-                    await productsCollection.where('categories', '==', catId).limit(8).get()
+                    await productsCollection.where('categories', '==', catId).limit(20).get()
                     :
                     await productsCollection.orderBy('price', 'desc').limit(20).get();
 
