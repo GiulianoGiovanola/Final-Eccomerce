@@ -67,7 +67,3 @@ Configuración de firebase desde .env
 
 ### Mejoras de Diseño - *Nuevo*
 Mejoras de la interfaces junto a la implementación de imagenes de alta calidad y pantallas nuevas 
-
-## Future improvments (Course out of scope)
-
-- Agregar buscador para encontrar el producto que se requiera
