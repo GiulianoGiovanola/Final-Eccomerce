@@ -6,7 +6,7 @@ import background from "../../img/background.png"
 
 const Principal = () => {
   return (
-    <Container style={{ backgroundImage: `url(${background})` }}>
+    <Container className="container" style={{ backgroundImage: `url(${background})` }}>
       <div>
         <h1>Step into the light</h1>
         <h3>with our special coffe flavours</h3>

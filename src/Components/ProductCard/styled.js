@@ -4,13 +4,13 @@ const Container = styled.div`
 
 display: flex;
 flex-direction: column;
-justify-content: center;
+justify-content: space-between;
 align-items: center;
 
 border-radius: 8px;
 background-color: #fff;
 color: #000;
-padding: 1em 0 0;
+height: 100%;
 
 box-shadow: 0px 1px 2px rgb(0 0 0 / 10%), 0px 2px 4px rgb(0 0 0 / 10%), 0px 4px 8px rgb(0 0 0 / 10%), 0px 8px 16px rgb(0 0 0 / 10%);
 
@@ -22,7 +22,7 @@ img{
 }
 
 .contenedor{
-    padding: 0 0.5em 2em;
+    height: 40%;
     text-align: center;
     padding: 0 0.5em;
 }

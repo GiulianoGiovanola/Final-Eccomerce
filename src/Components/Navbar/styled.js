@@ -15,7 +15,7 @@ const Container = styled.div`
 
     .logo{
         width: 4%;
-        padding-left: 2em;
+        padding-left: 3em;
     }
 
     nav {
@@ -47,6 +47,74 @@ const Container = styled.div`
                     color: #fa2b57;
                 }
             }
+        }
+    }
+  
+  
+    @media (min-width: 1025px) and (max-width: 1280px) {
+        .logo{
+            width: 4%;
+            padding-right: 4em;
+        }
+
+        nav {
+            padding-right: 3em;
+        }
+    }
+  
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .logo{
+            width: 6%;
+        }
+
+        nav {
+            padding-right: 2em;
+        }
+    }
+  
+    @media (min-width: 481px) and (max-width: 768px) {
+        .logo{
+            width: 8%;
+        }
+
+        nav{
+            padding-right: 2em;
+
+            ul{
+
+                li{
+
+                    a{
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+  
+    @media (min-width: 320px) and (max-width: 480px) {   
+        .logo{
+            width: 10%;
+            padding-left: 1.5em;
+        }
+
+        nav{
+            padding-right: 1.5em;
+            ul{
+
+                li{
+                    padding: 0 0 0 1.5em;
+
+                    a{
+                        font-size: 13px;
+
+                        img{
+                            width: 85%;
+                        }
+                    }
+                }
+            }
+
         }
     }
 `
