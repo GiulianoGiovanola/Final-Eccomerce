@@ -37,7 +37,7 @@ const CategoryContainer = ({ catId }) => {
             {loading ? (
                 <img className="gif" src={Cafe} alt="imgGif"/>
             ) : (
-                <Grid rowGap={30} colGap={30}>
+                <Grid rowGap={20} colGap={20}>
                     {products.map(({ name, image, description, id }, index) =>
                         <Col desktop={3} tablet={6} mobile={12} key={index}>
                             <ProductCard name={name} image={image} description={description} id={id} />

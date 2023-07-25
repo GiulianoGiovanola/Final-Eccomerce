@@ -1,48 +1,48 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const Container = styled.div`
+  display: flex;
+  align-items: center;
+  width: 75%;
+  margin: 125px auto 50px;
+  background-color: #fff;
+  padding: 2em;
+  height: 60vh;
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px -2px rgba(0, 0, 0, 0.2);
 
-display: flex;
-align-items: center;
-width: 75%;
-margin: 125px auto 50px;
-background-color: #fff;
-padding: 2em;
-height: 60vh;
-border-radius: 15px;
-box-shadow: 0px 10px 30px -2px rgba(0, 0, 0, 0.2);
-
-img{
+  img {
     width: 65%;
     margin: 0 auto;
     display: block;
     border-radius: 30px;
     min-height: 200px;
-}
+  }
 
-.contInfo{
+  .contInfo {
     padding-left: 2em;
-}
+  }
 
-.subtitulos{
+  .subtitulos {
     font-weight: 600;
-}
+  }
 
-h1, p{
+  h1,
+  p {
     color: #333030;
     margin: 0;
-}
+  }
 
-p{
+  p {
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
     margin: 1em 0 1em;
-}
+  }
 
-button{
+  button {
     padding: 1em;
-    font-family: 'Montserrat', 'Poppins', 'sans-serif'; 
+    font-family: "Montserrat", "Poppins", "sans-serif";
     font-size: 14px;
     color: #fff;
     width: 100%;
@@ -55,7 +55,22 @@ button{
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
     font-weight: 600;
     text-transform: uppercase;
-}
-`
+  }
 
-export {Container}
+  @media (min-width: 1025px) and (max-width: 1280px) {
+
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+
+  }
+
+  @media (min-width: 481px) and (max-width: 768px) {
+
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+  }
+`;
+
+export { Container };
