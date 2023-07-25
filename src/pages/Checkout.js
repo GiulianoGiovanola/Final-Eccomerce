@@ -58,7 +58,7 @@ const Checkout = () => {
       <NavbarStatic />
       <Container>
         <Grid>
-          <Col desktop={12} tablet={6} mobile={12}>
+          <Col desktop={12} tablet={12} mobile={12}>
             {orderCreated ? (
               <h2>Checkout {`Order N° ${orderCreated}`}</h2>
             ) : (
@@ -66,7 +66,7 @@ const Checkout = () => {
             )}
           </Col>
           {cartTotalItems() > 0 ? (
-            <Col desktop={12} tablet={6} mobile={12}>
+            <Col desktop={12} tablet={12} mobile={12}>
               <CheckoutForm
                 handleSubmit={placeOrder}
                 cartTotalItems={cartTotalItems}
@@ -75,7 +75,7 @@ const Checkout = () => {
           ) : (
             <></>
           )}
-          <Col desktop={12} tablet={6} mobile={12}>
+          <Col desktop={12} tablet={12} mobile={12}>
             <CartDetail
               cart={cart}
               getCartTotal={getCartTotal}

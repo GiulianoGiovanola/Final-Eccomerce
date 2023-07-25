@@ -29,9 +29,11 @@ const CheckoutForm = ({ handleSubmit }) => (
   >
     {({ isSubmitting }) => (
       <Form id="my-form">
-        <Field placeholder="Name" type="text" name="name" required/>
-        <Field placeholder="Email" type="email" name="email" required/>
-        <Field placeholder="Phone" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="A valid telephone number consist of a 3 digits code area between brackets, a space, the three first digits of the number, a space or hypen (-), and four more digits" required/>
+        <div className="contentInputs">
+          <Field placeholder="Name" type="text" name="name" required/>
+          <Field placeholder="Email" type="email" name="email" required/>
+          <Field placeholder="Phone" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="A valid telephone number consist of a 3 digits code area between brackets, a space, the three first digits of the number, a space or hypen (-), and four more digits" required/>
+        </div>
         <Container>
           <button type="submit" disabled={isSubmitting}>
             Submit

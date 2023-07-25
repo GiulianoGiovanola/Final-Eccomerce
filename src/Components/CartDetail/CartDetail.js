@@ -1,14 +1,21 @@
-import React from 'react';
+import React from "react";
 import { Container } from "./styled";
 
-const CartDetail = ({ cart, getCartTotal, resetCart, removeItem, editQuantity, cartTotalItems }) => {
-
+const CartDetail = ({
+  cart,
+  getCartTotal,
+  resetCart,
+  removeItem,
+  editQuantity,
+  cartTotalItems,
+}) => {
   return (
     <Container>
       {cart.map(({ id, name, price, quantity }) => (
         <ul>
-            <li>
-              <p className='productname'>{name}</p>
+          <li>
+            <p className="productname">{name}</p>
+            <div className="contentPrice">
               <div className="addOrDelete">
                 <button
                   className="btn"
@@ -22,24 +29,23 @@ const CartDetail = ({ cart, getCartTotal, resetCart, removeItem, editQuantity, c
                 <label> {quantity} </label>
                 <button
                   className="btn"
-                  onClick={() =>
-                    editQuantity({ id, name, price, quantity: 1 })
-                  }
+                  onClick={() => editQuantity({ id, name, price, quantity: 1 })}
                 >
                   +
                 </button>
-                </div>
-                <button className="btnend" onClick={() => removeItem(id)}>
-                  Remove
-                </button>
+              </div>
               <p className="precio">{price} €</p>
-            </li>
+              <button className="btnend" onClick={() => removeItem(id)}>
+                Remove
+              </button>
+            </div>
+          </li>
         </ul>
       ))}
-      
+
       {cartTotalItems() > 0 ? (
         <div className="final">
-          <h3 className='total'>Total: {getCartTotal()} €</h3>
+          <h3 className="total">Total: {getCartTotal()} €</h3>
           <button className="btnempty" onClick={() => resetCart()}>
             Empty cart
           </button>
