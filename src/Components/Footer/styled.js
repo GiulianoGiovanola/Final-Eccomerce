@@ -66,8 +66,12 @@ const Footer = styled.footer`
 
   @media (min-width: 769px) and (max-width: 1024px) {
     nav {
+      h3{
+        padding: 0 0 0 1em;
+      }
       ul {
         li {
+          padding: 0.75em 0 0 1em;
           a {
             font-size: 15px;
             .imgSociales {
@@ -85,10 +89,12 @@ const Footer = styled.footer`
 
     .logo {
       margin: 1em 0;
+      width: 50%;
     }
 
     nav {
       margin: 1em 0;
+      width: 50%;
       h3 {
         padding: 0;
       }

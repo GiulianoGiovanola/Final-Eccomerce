@@ -6,7 +6,7 @@ import Person from '../../img/person-img-2.jpg'
 const Empresa = () => {
   return (
     <Container>
-      <div className="parrafo1">
+      <div className="parrafo special">
         <img className="coffee" src={Coffee} alt="imgCoffee" />
         <div>
           <h2>OUR STORY</h2>
@@ -20,7 +20,7 @@ const Empresa = () => {
           </p>
         </div>
       </div>
-      <div>
+      <div className="parrafo">
         <div>
           <h2>A GLOBAL PRESENCE</h2>
           <h4>THE REST IS HISTORY</h4>

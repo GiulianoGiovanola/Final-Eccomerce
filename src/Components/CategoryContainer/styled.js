@@ -25,6 +25,7 @@ const Container = styled.div`
         }
         .contenedor {
           padding: 0 1em 1.25em;
+          height: 55%;
           h2 {
             font-size: 24px;
           }

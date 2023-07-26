@@ -12,7 +12,7 @@ const Container = styled.div`
     transform: scaleY(-1);
   }
 
-  .parrafo1 {
+  .parrafo {
     padding: 0;
   }
 
@@ -22,7 +22,8 @@ const Container = styled.div`
     align-items: center;
     padding: 5em 0;
 
-    .coffee, .person {
+    .coffee,
+    .person {
       box-shadow: 0px 1px 2px rgb(0 0 0 / 10%), 0px 2px 4px rgb(0 0 0 / 10%),
         0px 4px 8px rgb(0 0 0 / 10%), 0px 8px 16px rgb(0 0 0 / 10%);
     }
@@ -61,6 +62,195 @@ const Container = styled.div`
         line-height: 32px;
         margin: 0 0 1.5em;
       }
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width: 1280px) {
+    padding: 2em 0 0;
+    div {
+      div {
+        margin-left: 4em;
+
+        h2 {
+          font-size: 30px;
+        }
+        h4,
+        p {
+          font-size: 16px;
+        }
+
+        p {
+          width: 90%;
+          margin: 0 0 0.75em;
+        }
+      }
+    }
+
+    .parrafo {
+      padding: 5em 0 0;
+    }
+
+    .parrafo > div {
+      padding: 0 !important;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    padding: 2em 0 0;
+
+    .special {
+      padding-bottom: 0 !important;
+    }
+
+    div {
+      div {
+        margin-left: 4em;
+
+        h2 {
+          font-size: 32px;
+        }
+        h4,
+        p {
+          font-size: 16px;
+        }
+
+        p {
+          width: 90%;
+          margin: 0 0 0.75em;
+        }
+      }
+    }
+
+    .parrafo {
+      padding: 5em 0 5em;
+    }
+
+    .parrafo > div {
+      padding: 0 !important;
+    }
+
+    img {
+      height: 70vh;
+      object-fit: cover;
+      object-position: right;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 768px) {
+    padding: 2em 0 0;
+
+    .special {
+      padding-bottom: 0 !important;
+      flex-direction: column-reverse !important;
+    }
+
+    div {
+      .coffee,
+      .person {
+        box-shadow: none;
+      }
+
+      .coffee {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+
+      .person {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      div {
+        margin-left: 4em;
+
+        h2 {
+          font-size: 28px;
+        }
+        h4,
+        p {
+          font-size: 16px;
+        }
+
+        p {
+          width: 90%;
+          margin: 0 0 0.75em;
+        }
+      }
+    }
+
+    .parrafo {
+      padding: 2em 0 0;
+      flex-direction: column;
+    }
+
+    .parrafo > div {
+      padding: 0 !important;
+      margin: 0 0 1em;
+      width: 90%;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      object-position: right;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    padding: 2em 0 0;
+
+    .special {
+      padding-bottom: 0 !important;
+      flex-direction: column-reverse !important;
+    }
+
+    div {
+      .coffee,
+      .person {
+        box-shadow: none;
+      }
+
+      .coffee {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+
+      .person {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      div {
+        margin-left: 4em;
+
+        h2 {
+          font-size: 24px;
+        }
+        h4,
+        p {
+          font-size: 16px;
+        }
+
+        p {
+          width: 90%;
+          margin: 0 0 0.75em;
+        }
+      }
+    }
+
+    .parrafo {
+      padding: 2em 0 0;
+      flex-direction: column;
+    }
+
+    .parrafo > div {
+      padding: 0 !important;
+      margin: 0 0 1em;
+      width: 90%;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      object-position: right;
     }
   }
 `;
